@@ -49,6 +49,12 @@ if st.checkbox("Show Some Statistics"):
     c2.dataframe(classes)
     fig = px.bar(classes, classes.index, classes.values)
     c2.plotly_chart(fig, use_container_width=True)
+    
+#if st.checkbox("visualize categorical data"):
+ #   st.subheader("Categorical Data Visualization")
+  #  st_col = st.radio("Select Column", cat_cols, horizontal=True)
+   # set_col_count = df[sel_col].value_counts()
+    #fig = px.pie(set_col_count, sel_col_count.index,sel_col_count.index,sel_col_count.values, title=)
 
 if st.checkbox("visualize categorical data"):
     st.subheader("Categorical Data Visualization")
